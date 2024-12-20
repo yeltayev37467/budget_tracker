@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/inputExpenseName"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Expense Name"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/inputExpenseAmount"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Expense Amount"
+        android:inputType="numberDecimal" />
+
+    <Spinner
+        android:id="@+id/categorySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/addExpenseButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Expense" />
+
+    <TextView
+        android:id="@+id/expenseSummary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:text="Expenses Summary"
+        android:textSize="16sp" />
+
+</LinearLayout>
