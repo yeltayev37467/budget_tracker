@@ -29,6 +29,8 @@
             android:theme="@style/Theme.AppCompat" />
         <activity android:name=".CategoriesActivity"
             android:theme="@style/Theme.AppCompat" />
+        <activity android:name=".AnalysisActivity"
+            android:theme="@style/Theme.AppCompat" />
 
     </application>
 

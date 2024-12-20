@@ -14,6 +14,8 @@ public class HomeActivity extends AppCompatActivity {
     private Button goToExpensesButton;
     private Button goToCategoriesButton;
 
+    private  Button analyzeExpensesButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +24,7 @@ public class HomeActivity extends AppCompatActivity {
         welcomeText = findViewById(R.id.welcomeText);
         goToExpensesButton = findViewById(R.id.goToExpensesButton);
         goToCategoriesButton = findViewById(R.id.goToCategoriesButton);
+        analyzeExpensesButton = findViewById(R.id.analyzeExpensesButton);
 
         String profileName = getIntent().getStringExtra("profileName");
         welcomeText.setText("Welcome, " + profileName);
@@ -38,6 +41,14 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(HomeActivity.this, CategoriesActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        analyzeExpensesButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this, AnalysisActivity.class);
                 startActivity(intent);
             }
         });

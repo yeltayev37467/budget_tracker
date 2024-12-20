@@ -26,4 +26,10 @@
         android:text="Manage Categories"
         android:paddingTop="8dp" />
 
+    <Button
+        android:id="@+id/analyzeExpensesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Analyze Expenses"
+        android:paddingTop="8dp" />
 </LinearLayout>
